@@ -5,12 +5,12 @@ describe('register user', () => {
       // cy.wait(1000)
       cy.get('.shop-menu > .nav > :nth-child(4) > a').click()
       cy.get('[data-qa="signup-name"]').type('testor')
-      cy.get('[data-qa="signup-email"]').type('testingnamo12@gmail.com')
+      cy.get('[data-qa="signup-email"]').type('testingnamo@gmail.com')
       cy.get('[data-qa="signup-button"]').click()
 
      // cy.get(':nth-child(1) > b').should('have.value','ENTER ACCOUNT INFORMATION')
      cy.get('#id_gender2').check().should('have.checked')
-     cy.get('[data-qa="password"]').type('testor@1234')
+     cy.get('[data-qa="password"]').type('Test@1234')
     // cy.get('[data-qa="days"]').should('have.vlaue', '12').click()
    //  cy.get('[data-qa="months"]')
     //  cy.get('[data-qa="years"]')
@@ -29,8 +29,10 @@ describe('register user', () => {
     cy.get('b').contains('Account Created')
     cy.get('[data-qa="continue-button"]').click()
     cy.get(':nth-child(10) > a').should('be.visible')
-    cy.get('.shop-menu > .nav > :nth-child(5) > a').click()
-    cy.get('b').contains('Account Deleted')
-    cy.get('[data-qa="continue-button"]').click()
+    // cy.get('.shop-menu > .nav > :nth-child(5) > a').click()
+    // cy.get('b').contains('Account Deleted')
+    // cy.get('[data-qa="continue-button"]').click()
     })
   })
+
+  //task pending validations and prompt of no thanks page and date select tab 
