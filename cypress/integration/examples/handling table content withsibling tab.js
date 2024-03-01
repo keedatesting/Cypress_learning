@@ -13,6 +13,7 @@ it('My FirstTest case',function()
        const text = $el.text()
        if(text.includes("Python"))
        {
+        //can not use next method directly as it can be used with the get method only use get wice and evry time loop is running index is also changing so value getting tore in index. 
         cy.get('tr td:nth-child(2)').eq(index).next().then(function(price)
         {
            const pricetext =price.text()

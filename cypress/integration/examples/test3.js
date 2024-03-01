@@ -22,7 +22,7 @@ cy.get('.ui-menu-item div').each(($el, index, $list) =>
       { 
        if($el.text()==="India")
        {
-        $el.click()
+        cy.wrap($el).click()
        }
       })
       cy.get('#autocomplete').should('have.value', 'India')

@@ -9,9 +9,7 @@ describe('logout', ()=>{
         cy.get('[data-qa="login-button"]').click()
         cy.get(':nth-child(10) > a').should('be.visible')
         cy.get('.shop-menu > .nav > :nth-child(4) > a').click()
-        
-
-
+    
     })
 
 })
