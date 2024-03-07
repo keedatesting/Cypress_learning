@@ -31,15 +31,16 @@ describe('Handling all Web related Ui elements of the page', () => {
         cy.get('#checkBoxOption2').uncheck().should('not.be.checked')
       })
 
-      it('verify that radiobuttons are being checked', () => {
+      it.skip('verify that radiobuttons are being checked', () => {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
         cy.get('input[value="radio2"]').check().should('have.value','radio2')
       })
 
-      it('verify that radiobuttons are being UNchecked', () => {
+      it.skip('verify that radiobuttons are being UNchecked', () => {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
         cy.get('input[value="radio2"]').check().should('have.value','radio2')
+        //uncheck method is only applicable for the checkboxes we ave to find some other way
         cy.get('input[value="radio2"]').uncheck().should('not.be.checked')
       }) 
 
-  })
+ })

@@ -7,7 +7,7 @@ class HomePage
 
     getTwoWayDataBinding()
     {
-        return cy.get(':nth-child(1) > .form-control')
+        return cy.get(":nth-child(4) > .ng-untouched")
     }
 
     getGender()
